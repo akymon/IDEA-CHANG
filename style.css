@@ -220,16 +220,21 @@ h1::selection, h2::selection, p::selection {
     background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
     margin: 1rem;
     font-family: 'Rajdhani', sans-serif;
+    border: 3px solid #00151d;
+
 }
 .card01 {
     margin: 10px;
     border: 5px solid #00151d;
 }
 .card-body {
-    padding-top: 0;
+    padding-top: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #00151d96;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
 }
 
 .card-body h5 {

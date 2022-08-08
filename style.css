@@ -104,6 +104,16 @@ font-size: 2.5rem;
     background-image: url(./assets/img/jumbotron01.jpg);
     background-size: cover;
     background-position: center;
+    text-align: center;
+}
+
+.jumboinicio h1 {
+    background: rgb(13,115,115);
+    background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    border-radius: 2rem;
 }
 .jumbocarriles {
     background-image: url(./assets/img/iniciofondo02.jpg);
@@ -206,7 +216,8 @@ h1::selection, h2::selection, p::selection {
 }
 
 .card {
-    background-color: #00374d;
+    background: rgb(13,115,115);
+    background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
     margin: 1rem;
     font-family: 'Rajdhani', sans-serif;
 }
@@ -280,6 +291,10 @@ h1::selection, h2::selection, p::selection {
     font-family: 'Rajdhani', sans-serif;
     font-weight: bold;
     text-align: center;
+    background: rgb(13,115,115);
+    background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
+    padding: 5px;
+    border-radius: 2rem;
 }
 
 .introVideo01, .introVideo02, .introVideo03 {
@@ -340,7 +355,14 @@ h1::selection, h2::selection, p::selection {
     text-align: center;
 }
 
-
+.subtitulocomic {
+    background: rgb(13,115,115);
+    background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 2rem;
+}
 .comics {
     background-image: url(./assets/img/comicsfondo00.jpg);
     background-size: cover;
@@ -371,6 +393,8 @@ h1::selection, h2::selection, p::selection {
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
     text-decoration: none;
+    background: rgb(13,115,115);
+    background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
 }
 
 .tomo1 {
@@ -491,12 +515,6 @@ footer .redes i:hover{
 }
 /* footer fin */
 
-
-
-
-
-
-
 /* vista mobile */
 @media only screen and (max-width: 403px){
     
@@ -528,39 +546,6 @@ footer .redes i:hover{
         transition: all 0.3s;
     }
 }
-
-/* ajuste de imagen de cardsssssssssssssssssssssssssssss */
-
-/* inicio primer breakpoint */
-/* @media only screen and (max-width: 576px){
-    .card01 {
-        background-image: url(./assets/img/campeonesShyvanaSmall.png);
-    }   
-} */
-/* fin primer breakpoint */
-
-/* inicio segundo breakpoint */
-/* @media only screen and (min-width: 577px){
-        
-    .card01 {
-        height: 330px ;
-        background-image: url(./assets/img/campeonesShyvanaMedium.png);
-    }   
-} */
-/* fin segundo breakpoint */
-
-/* inicio tercer breakpoint */
-/* @media only screen and (min-width: 768px){
-        
-    .card01 {
-        width: 90%;
-        
-        background-image: url(./assets/img/campeonesShyvana.png);
-    }   
-} */
-/* fin tercer breakpoint */
-
-/* ajuste de imagen de cardsssssssssssssssssssssssssssss */
 
 @media only screen and (min-width:360px) {
     

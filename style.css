@@ -107,7 +107,7 @@ font-size: 2.5rem;
     text-align: center;
 }
 
-.jumboinicio h1 {
+.jumboinicio h1, .jumbocarriles h1, .jumbocomics h1 {
     background: rgb(13,115,115);
     background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
     margin-left: 50px;
@@ -317,6 +317,14 @@ h1::selection, h2::selection, p::selection {
     background-image: url(./assets/img/back06.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.jumbocomics p {
+    margin: 0; 
+    text-align: center;
+}
+.jumbocomics h1 {
+    margin-bottom: 1rem;
 }
 
 .carousel {

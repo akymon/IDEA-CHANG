@@ -423,7 +423,36 @@ h1::selection, h2::selection, p::selection {
 }
 /* fin comic */
 
+/* inicia boton subir */
+.subir {
+    height: 3.1rem;
+    width: 3.1rem;
+    background-color: black;
+    text-align: center;
+    line-height: 2.5rem;
+    border: 0.3rem solid #40e0d0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    color: #40e0d0;
+    transition: all 1s;
+}
 
+.subir:hover {
+    background-color: #40e0d0;
+    color: black;
+    border: 5px solid #216e67;
+    transition: all 1s;
+}
+.subir:focus {
+    background-color: rgb(3, 22, 41);
+    color: #f58b01;
+    border: 5px solid #f58b01;
+    transition: all 1s;
+}
+/* fin boton subir */
 /* footer inicia */
 footer{
     text-align: center;

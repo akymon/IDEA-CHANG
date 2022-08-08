@@ -209,20 +209,19 @@ h1::selection, h2::selection, p::selection {
 
 /* cardcampeones inicio */
 
-.cardcampeones {
-    background-image: url(./assets/img/formacionesfondo00.jpg);
-    background-size: cover;
-    padding: 20px;
-}
-
 .card {
     background: rgb(13,115,115);
     background: linear-gradient(180deg, rgba(13,115,115,1) 0%, rgba(9,77,77,0.24681591386554624) 25%, rgba(0,0,0,1) 100%);
     margin: 1rem;
     font-family: 'Rajdhani', sans-serif;
     border: 3px solid #00151d;
-
 }
+.cardcampeones {
+    background-image: url(./assets/img/formacionesfondo00.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
 .card01 {
     margin: 10px;
     border: 5px solid #00151d;

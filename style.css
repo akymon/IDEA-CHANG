@@ -306,6 +306,10 @@ h1::selection, h2::selection, p::selection {
     border-bottom: 1rem solid black;
     padding: 1rem;
 }
+
+.carousel-indicators{
+    z-index: 1;
+}
 .carousel-indicators li {
     width: 20px;
     height: 10px;
@@ -366,6 +370,7 @@ h1::selection, h2::selection, p::selection {
     margin-left: 0.5rem;
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
+    text-decoration: none;
 }
 
 .tomo1 {

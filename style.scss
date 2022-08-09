@@ -1,0 +1,769 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.col-lg-12,
+.col-lg-6 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* navbar inicio */
+.navbar {
+    background-image: url(./assets/img/banner01B.jpg);
+    background-color: grey;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0.5rem;
+    font-family: 'Reem Kufi', sans-serif;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 1rem solid #00374d;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    a::first-letter {
+        color: #40e0d0;
+        font-size: 3.2rem;
+        }
+}
+
+.navbar-brand {
+    margin-left: 1.5rem;
+    color: #177269;
+    font-size: 2.5rem;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    transition: all 1s;
+}
+
+.navbar-brand::after {
+    font-size: 1.5rem;
+    color: #e48406;
+    content: " //";
+    text-shadow: 1px 1px 5px black;
+}
+
+.nav-header {
+    text-shadow: 1px 1px 5px #40e0d0;
+    font-family: 'Abel', sans-serif;
+    transition: all 0.5s;
+    color: #40e0d0;
+    margin-right: 15px;
+    background-color: black;
+    padding: 7px;
+    border-radius: 0.5rem;
+}
+
+.nav-header:hover {
+    text-shadow: 1px 1px 5px white;
+    transform: scale(1.2);
+    transition: all 0.5s;
+    text-decoration: none;
+    color: white;
+    background-color: #e48406;
+}
+
+.nav-item1 {
+    i {
+        color: white;
+        text-shadow: 1px 1px 5px white;
+        }
+
+    a {
+        color: white;
+        background-color: #e48406;
+        }
+}
+/* navbar fin */
+
+/* jumbotron inicio */
+.jumbotron {
+
+    text-shadow: 1px 1px 5px black;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    border-bottom: 1rem solid black;
+    padding: 1.5rem;
+
+    h1 {
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        }
+    
+    p {
+        font-weight: bold;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        }
+}
+
+.jumboinicio {
+    background-image: url(./assets/img/jumbotron01.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    h1 {
+        background: rgb(13, 115, 115);
+        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+        border-radius: 2rem;
+        }
+}
+
+.jumbocarriles {
+    background-image: url(./assets/img/iniciofondo02.jpg);
+    background-size: cover;
+    background-position: center;
+    h1 {
+        background: rgb(13, 115, 115);
+        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+        border-radius: 2rem;
+        }
+}
+
+.btn-info {
+    background-color: #00374d;
+    font-family: 'Rajdhani', sans-serif;
+    border: 0.2rem solid #00151d;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.btncard {
+    background-color: #00374d;
+    font-family: 'Rajdhani', sans-serif;
+    border: 0.2rem solid #00151d;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #e48406;
+    border: 0.2rem solid #794605;
+    color: white;
+    transition: all 0.5s;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+h1::first-letter {
+    color: #40e0d0;
+    font-size: 3.2rem;
+}
+
+h2::first-letter {
+    color: #40e0d0;
+    font-size: 3rem;
+}
+
+/* jumbotron fin */
+
+/* section intro01 inicio */
+
+.intro01 {
+    padding: 2rem;
+    
+    h2 {
+        margin-top: 0.5rem;
+    }
+    p {
+        font-weight: bold;
+        font-family: 'Abel', sans-serif;
+    }
+}
+
+.intro02,
+.intro03 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 5px black;
+}
+
+.intro04 {
+    h2 {
+        margin-top: 0.5rem;
+    }
+    p {
+        font-weight: bold;
+        font-family: 'Abel', sans-serif;
+    }
+}
+
+h1::selection,
+h2::selection,
+p::selection {
+    background-color: #00151d;
+    color: #40e0d0;
+}
+/* section intro01 fin */
+
+/* cardcampeones inicio */
+.card {
+    background: rgb(13, 115, 115);
+    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    margin: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    border: 3px solid #00151d;
+}
+
+.cardcampeones {
+    background-image: url(./assets/img/formacionesfondo00.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+.card01 {
+    margin: 10px;
+    border: 5px solid #00151d;
+}
+
+.card-body {
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    background-color: #00151d96;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    
+    h5 {
+        text-transform: capitalize;
+        color: #40e0d0;
+        text-shadow: 1px 1px 5px #40e0d0;
+        font-weight: bold;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    p {
+        color: white;
+        text-shadow: 1px 1px 5px white;
+    }
+}
+
+.cardenfasis {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e48406;
+    text-shadow: 1px 1px 5px #e48406;
+}
+
+/* cardcampeones fin */
+
+/* inicio inicio */
+.contenido01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./assets/img/submenuintro02.jpg);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border-bottom: 1rem solid black;
+}
+
+.contenido02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: url(./assets/img/submenuintro02.jpg);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    text-align: right;
+    font-size: 1rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    border-bottom: 1rem solid black;
+
+    p {
+        margin: 1rem;
+        text-align: center;
+    }
+}
+
+.contenido01section,
+.contenido02section {
+    justify-content: center;
+}
+
+.subtitulo01,
+.subtitulo02 {
+    font-size: 2.5rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(13, 115, 115);
+    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    padding: 5px;
+    border-radius: 2rem;
+}
+
+.introVideo01,
+.introVideo02,
+.introVideo03 {
+    border: 0.5rem solid #00374d;
+    border-radius: 0.5rem;
+}
+
+/* fin inicio */
+
+/* inicio comic */
+.jumbocomics {
+    background-image: url(./assets/img/back06.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    h1 {
+        background: rgb(13, 115, 115);
+        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 1rem;
+        text-align: center;
+        border-radius: 2rem;
+        }
+
+    p {
+        margin: 0;
+        text-align: center;
+        }    
+}
+
+.carousel {
+    background-image: url(./assets/img/back01.png);
+    background-size: cover;
+    border-bottom: 1rem solid black;
+    padding: 1rem;
+
+    h3 {
+        padding-top: 10px;
+        font-size: 1.5rem;
+        font-family: 'Reem Kufi', sans-serif;
+        color: white;
+        text-align: center;
+    }
+}
+
+.carousel-indicators {
+    z-index: 1;
+
+    li {
+        width: 20px;
+        height: 10px;
+        background-color: #40e0d0;
+        transition: all 0.3s;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        }
+
+    li:hover {
+        background-color: #177269;
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+
+    li:active {
+        background-color: #e48406;
+        transition: all 0.3s;
+    }
+    }
+
+.carousel-inner {
+    width: 50%;
+    margin: auto;
+}
+
+.subtitulocomic {
+    background: rgb(13, 115, 115);
+    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    padding: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 2rem;
+}
+
+.comics {
+    background-image: url(./assets/img/comicsfondo00.jpg);
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 10rem);
+    padding: 2rem;
+    grid-gap: 1rem;
+    justify-items: center;
+
+    a {
+        font-family: 'Abel', sans-serif;
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: #40e0d0;
+        align-self: center;
+        font-size: 1rem;
+        text-shadow: 0 0 1.1rem black;
+        background-color: #000000a8;
+        padding: 0.1rem;
+        width: 180%;
+        height: auto;
+        margin-bottom: 7rem;
+        margin-left: 0.5rem;
+        border-bottom-right-radius: 2rem;
+        border-top-right-radius: 2rem;
+        text-decoration: none;
+        background: rgb(13, 115, 115);
+        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    }
+}
+
+.tomo1 {
+    background-image: url(./assets/img/iniciocomic01.png);
+}
+
+.tomo2 {
+    background-image: url(./assets/img/iniciocomic02.png);
+}
+
+.tomo3 {
+    background-image: url(./assets/img/iniciocomic03.png);
+}
+
+.tomo4 {
+    background-image: url(./assets/img/iniciocomic04.png);
+}
+
+.tomo5 {
+    background-image: url(./assets/img/iniciocomic05.png);
+}
+
+.tomo6 {
+    background-image: url(./assets/img/iniciocomic06.png);
+}
+
+.tomo7 {
+    background-image: url(./assets/img/portadas01.jfif);
+}
+
+.tomo8 {
+    background-image: url(./assets/img/portadas02.jfif);
+}
+
+.tomo9 {
+    background-image: url(./assets/img/portadas03.jfif);
+}
+
+.tomo10 {
+    background-image: url(./assets/img/portadas04.jfif);
+}
+
+.tomo11 {
+    background-image: url(./assets/img/portadas05.jfif);
+}
+
+.tomo12 {
+    background-image: url(./assets/img/portada06.jpg);
+}
+
+.tomo1,
+.tomo2,
+.tomo3,
+.tomo4,
+.tomo5,
+.tomo6,
+.tomo7,
+.tomo8,
+.tomo9,
+.tomo10,
+.tomo11,
+.tomo12 {
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 2rem;
+    border: 0.3rem solid #103532;
+    filter: sepia(100%);
+    transition: all 0.7s;
+    width: 80%;
+}
+
+.tomo1:hover,
+.tomo2:hover,
+.tomo3:hover,
+.tomo4:hover,
+.tomo5:hover,
+.tomo6:hover,
+.tomo7:hover,
+.tomo8:hover,
+.tomo9:hover,
+.tomo10:hover,
+.tomo11:hover,
+.tomo12:hover {
+    filter: sepia(0%);
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+/* fin comic */
+
+/* inicia boton subir */
+.subir {
+    height: 3.1rem;
+    width: 3.1rem;
+    background-color: black;
+    text-align: center;
+    line-height: 2.5rem;
+    border: 0.3rem solid #40e0d0;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    font-size: 2rem;
+    color: #40e0d0;
+    transition: all 1s;
+}
+
+.subir:hover {
+    background-color: #40e0d0;
+    color: black;
+    border: 5px solid #216e67;
+    transition: all 1s;
+}
+
+.subir:focus {
+    background-color: rgb(3, 22, 41);
+    color: #f58b01;
+    border: 5px solid #f58b01;
+    transition: all 1s;
+}
+
+/* fin boton subir */
+/* footer inicia */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url(./assets/img/back07.jpg);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    text-shadow: 1px 1px 5px #40e0d0;
+    padding: 0.5rem;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .redes i {
+        font-size: 1.2rem;
+        color: white;
+        letter-spacing: 0.6rem;
+        margin-top: 0.5rem;
+    }
+
+    .redes i:hover {
+        color: #40e0d0;
+        transform: scale(1.5);
+        transition: all 0.5s;
+    }
+}
+
+/* footer fin */
+
+/* vista mobile */
+@media only screen and (max-width: 403px) {
+
+    .jumbotron {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+
+    .intro02,
+    .intro03 {
+        width: auto;
+        height: auto;
+    }
+
+    .carousel-indicators {
+
+        li {
+            width: 10px;
+            height: 5px;
+            background-color: #40e0d0;
+            transition: all 0.3s;
+        }
+
+        li:hover {
+            background-color: #177269;
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
+
+        li:active {
+            background-color: #e48406;
+            transition: all 0.3s;
+        }
+    }
+    }
+
+
+@media only screen and (min-width:360px) {
+
+    .comics {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 12.5rem);
+        transition: all 1s;
+        
+        a {
+            font-family: 'Abel', sans-serif;
+            font-size: 2rem;
+            padding: 0.1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 600px) {
+
+
+    .intro02,
+    .intro03 {
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+
+    .intro02,
+    .intro03 {
+        width: 700px;
+        height: 300px;
+    }
+
+    .comics {
+
+        a {
+        font-size: 2rem;
+        transition: all 1s;
+    }
+}
+}
+
+/* vista desktop */
+@media only screen and (min-width: 992px) {
+
+    .jumbotron {
+        text-align: center;
+    }
+
+    .intro02, .intro03 {
+        width: 100%;
+        height: 400px;
+        align-self: center;
+    }
+
+    .intro01,
+    .intro04 {
+        align-self: center;
+    }
+
+    .navbarBarra {
+        justify-content: end;
+    }
+
+    .comics {
+        a {
+        font-size: 2rem;
+        transition: all 1s;
+    }
+    }
+}
+
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+    .jumbotron {
+        text-align: center;
+    }
+
+    .carousel-indicators {
+        li {
+        width: 30px;
+        height: 15px;
+        background-color: #40e0d0;
+        transition: all 0.3s;
+    }
+
+        li:hover {
+        background-color: #177269;
+        transform: scale(1.2);
+        transition: all 0.3s;
+    }
+
+        li:active {
+        background-color: #e48406;
+        transition: all 0.3s;
+    }
+    }
+
+
+    .comics {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 20rem);
+        transition: all 1s;
+
+        a {
+            font-size: 3rem;
+            transition: all 1s;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+
+    .intro02,
+    .intro03 {
+        width: 100%;
+        height: 600px;
+    }
+}

@@ -245,7 +245,8 @@ p::selection {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
-  background-color: rgba(0, 21, 29, 0.5882352941);
+  background: rgb(13, 115, 115);
+  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
 }
@@ -260,6 +261,7 @@ p::selection {
 .card-body p {
   color: white;
   text-shadow: 1px 1px 5px white;
+  text-align: center;
 }
 
 .cardenfasis {

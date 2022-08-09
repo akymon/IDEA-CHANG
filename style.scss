@@ -3,6 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap');
 
+$color1: #00151d;
+$color2: #00374d;
+$color3: #103532;
+$color4: #177269;
+$color5: #216e67;
+$color6: #40e0d0;
+$color7: #794605;
+$color8: #e48406;
+$color9: #f58b01;
+$color10: black;
+$color11: white;
+$gradient1A:rgb(13, 115, 115);
+$gradient1B: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+$font1: 'Abel', sans-serif;
+$font2: 'Rajdhani', sans-serif;
+$font3: 'Reem Kufi', sans-serif;
+$fontshadow1: 1px 1px 5px black;
+$fontshadow2: 1px 1px 5px white;
+$fontshadow3: 1px 1px 5px #40e0d0;
+$transition0: all 0.3s;
+$transition1: all 0.5s;
+$transition2: all 1s;
+
+
 * {
     padding: 0;
     margin: 0;
@@ -23,74 +47,74 @@
     background-color: grey;
     background-size: cover;
     background-position: center;
-    color: white;
-    text-shadow: 1px 1px 5px black;
+    color: $color11;
+    text-shadow: $fontshadow1;
     font-size: 1rem;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     padding: 0.5rem;
-    font-family: 'Reem Kufi', sans-serif;
+    font-family: $font3;
     text-transform: uppercase;
     font-weight: bolder;
-    border-bottom: 1rem solid #00374d;
+    border-bottom: 1rem solid $color2;
     position: sticky;
     top: 0;
     z-index: 2;
 
     a::first-letter {
-        color: #40e0d0;
+        color: $color6;
         font-size: 3.2rem;
         }
 }
 
 .navbar-brand {
     margin-left: 1.5rem;
-    color: #177269;
+    color: $color4;
     font-size: 2.5rem;
 }
 
 .navbar-brand:hover {
     transform: scale(1.1);
-    transition: all 1s;
+    transition: $transition2;
 }
 
 .navbar-brand::after {
     font-size: 1.5rem;
-    color: #e48406;
+    color: $color8;
     content: " //";
-    text-shadow: 1px 1px 5px black;
+    text-shadow: $fontshadow1;
 }
 
 .nav-header {
-    text-shadow: 1px 1px 5px #40e0d0;
-    font-family: 'Abel', sans-serif;
-    transition: all 0.5s;
-    color: #40e0d0;
+    text-shadow: $fontshadow3;
+    font-family: $font1;
+    transition: $transition1;
+    color: $color6;
     margin-right: 15px;
-    background-color: black;
+    background-color: $color10;
     padding: 7px;
     border-radius: 0.5rem;
 }
 
 .nav-header:hover {
-    text-shadow: 1px 1px 5px white;
+    text-shadow: $fontshadow2;
     transform: scale(1.2);
-    transition: all 0.5s;
+    transition: $transition1;
     text-decoration: none;
-    color: white;
-    background-color: #e48406;
+    color: $color11;
+    background-color: $color8;
 }
 
 .nav-item1 {
     i {
-        color: white;
-        text-shadow: 1px 1px 5px white;
+        color: $color11;
+        text-shadow: $fontshadow2;
         }
 
     a {
-        color: white;
-        background-color: #e48406;
+        color: $color11;
+        background-color: $color8;
         }
 }
 /* navbar fin */
@@ -98,23 +122,23 @@
 /* jumbotron inicio */
 .jumbotron {
 
-    text-shadow: 1px 1px 5px black;
+    text-shadow: $fontshadow1;
     border-radius: 0;
     margin-bottom: 0;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font2;
     font-size: 1rem;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid $color10;
     padding: 1.5rem;
 
     h1 {
         font-weight: bold;
-        color: white;
+        color: $color11;
         text-transform: uppercase;
         }
     
     p {
         font-weight: bold;
-        color: white;
+        color: $color11;
         text-transform: uppercase;
         font-size: 1.1rem;
         }
@@ -150,46 +174,46 @@
 }
 
 .btn-info {
-    background-color: #00374d;
-    font-family: 'Rajdhani', sans-serif;
-    border: 0.2rem solid #00151d;
+    background-color: $color2;
+    font-family: $font2;
+    border: 0.2rem solid $color1;
     text-transform: uppercase;
     border-radius: 1rem;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: $transition1;
 }
 .btncard {
-    background-color: #00374d;
-    font-family: 'Rajdhani', sans-serif;
-    border: 0.2rem solid #00151d;
+    background-color: $color2;
+    font-family: $font2;
+    border: 0.2rem solid $color1;
     text-transform: uppercase;
     border-radius: 1rem;
     font-weight: bold;
-    transition: all 0.5s;
+    transition: $transition1;
     width: 100%;
 }
 
 .btn:hover {
-    background-color: #e48406;
-    border: 0.2rem solid #794605;
-    color: white;
-    transition: all 0.5s;
+    background-color: $color8;
+    border: 0.2rem solid $color7;
+    color: $color11;
+    transition: $transition1;
 }
 
 .btn a {
-    color: white;
+    color: $color11;
     text-decoration: none;
 }
 
 
 
 h1::first-letter {
-    color: #40e0d0;
+    color: $color6;
     font-size: 3.2rem;
 }
 
 h2::first-letter {
-    color: #40e0d0;
+    color: $color6;
     font-size: 3rem;
 }
 
@@ -205,7 +229,7 @@ h2::first-letter {
     }
     p {
         font-weight: bold;
-        font-family: 'Abel', sans-serif;
+        font-family: $font1;
     }
 }
 
@@ -213,7 +237,7 @@ h2::first-letter {
 .intro03 {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: $fontshadow1;
 }
 
 .intro04 {
@@ -222,15 +246,15 @@ h2::first-letter {
     }
     p {
         font-weight: bold;
-        font-family: 'Abel', sans-serif;
+        font-family: $font1;
     }
 }
 
 h1::selection,
 h2::selection,
 p::selection {
-    background-color: #00151d;
-    color: #40e0d0;
+    background-color: $color1;
+    color: $color6;
 }
 /* section intro01 fin */
 
@@ -239,8 +263,8 @@ p::selection {
     background: rgb(13, 115, 115);
     background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
     margin: 1rem;
-    font-family: 'Rajdhani', sans-serif;
-    border: 3px solid #00151d;
+    font-family: $font2;
+    border: 3px solid $color1;
 }
 
 .cardcampeones {
@@ -251,7 +275,7 @@ p::selection {
 
 .card01 {
     margin: 10px;
-    border: 5px solid #00151d;
+    border: 5px solid $color1;
 }
 
 .card-body {
@@ -259,29 +283,31 @@ p::selection {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-bottom: 0.5rem;
-    background-color: #00151d96;
+    background: $gradient1A;
+    background: $gradient1B;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
     
     h5 {
         text-transform: capitalize;
-        color: #40e0d0;
-        text-shadow: 1px 1px 5px #40e0d0;
+        color: $color6;
+        text-shadow: $fontshadow3;
         font-weight: bold;
         font-size: 2.4rem;
         text-align: center;
     }
     p {
-        color: white;
-        text-shadow: 1px 1px 5px white;
+        color: $color11;
+        text-shadow: $fontshadow2;
+        text-align: center;
     }
 }
 
 .cardenfasis {
     text-transform: uppercase;
     font-weight: bold;
-    color: #e48406;
-    text-shadow: 1px 1px 5px #e48406;
+    color: $color8;
+    text-shadow: 1px 1px 5px $color8;
 }
 
 /* cardcampeones fin */
@@ -292,13 +318,13 @@ p::selection {
     flex-direction: row;
     justify-content: center;
     background-image: url(./assets/img/submenuintro02.jpg);
-    color: white;
-    text-shadow: 1px 1px 5px black;
+    color: $color11;
+    text-shadow: $fontshadow1;
     text-align: center;
     font-size: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid $color10;
 }
 
 .contenido02 {
@@ -306,13 +332,13 @@ p::selection {
     flex-direction: row;
     justify-content: center;
     background-image: url(./assets/img/submenuintro02.jpg);
-    color: white;
-    text-shadow: 1px 1px 5px black;
+    color: $color11;
+    text-shadow: $fontshadow1;
     text-align: right;
     font-size: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid $color10;
 
     p {
         margin: 1rem;
@@ -328,11 +354,11 @@ p::selection {
 .subtitulo01,
 .subtitulo02 {
     font-size: 2.5rem;
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font2;
     font-weight: bold;
     text-align: center;
-    background: rgb(13, 115, 115);
-    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    background: $gradient1A;
+    background: $gradient1B;
     padding: 5px;
     border-radius: 2rem;
 }
@@ -340,7 +366,7 @@ p::selection {
 .introVideo01,
 .introVideo02,
 .introVideo03 {
-    border: 0.5rem solid #00374d;
+    border: 0.5rem solid $color2;
     border-radius: 0.5rem;
 }
 
@@ -353,8 +379,8 @@ p::selection {
     background-position: center;
     
     h1 {
-        background: rgb(13, 115, 115);
-        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        background: $gradient1A;
+        background: $gradient1B;
         margin-left: 50px;
         margin-right: 50px;
         margin-bottom: 1rem;
@@ -371,14 +397,14 @@ p::selection {
 .carousel {
     background-image: url(./assets/img/back01.png);
     background-size: cover;
-    border-bottom: 1rem solid black;
+    border-bottom: 1rem solid $color10;
     padding: 1rem;
 
     h3 {
         padding-top: 10px;
         font-size: 1.5rem;
-        font-family: 'Reem Kufi', sans-serif;
-        color: white;
+        font-family: $font3;
+        color: $color11;
         text-align: center;
     }
 }
@@ -389,21 +415,21 @@ p::selection {
     li {
         width: 20px;
         height: 10px;
-        background-color: #40e0d0;
-        transition: all 0.3s;
+        background-color: $color6;
+        transition: $transition0;
         margin-left: 0.5rem;
         margin-right: 0.5rem;
         }
 
     li:hover {
-        background-color: #177269;
+        background-color: $color4;
         transform: scale(1.2);
-        transition: all 0.3s;
+        transition: $transition0;
     }
 
     li:active {
-        background-color: #e48406;
-        transition: all 0.3s;
+        background-color: $color8;
+        transition: $transition0;
     }
     }
 
@@ -413,8 +439,8 @@ p::selection {
 }
 
 .subtitulocomic {
-    background: rgb(13, 115, 115);
-    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+    background: $gradient1A;
+    background: $gradient1B;
     padding: 5px;
     margin-left: 50px;
     margin-right: 50px;
@@ -434,13 +460,13 @@ p::selection {
     justify-items: center;
 
     a {
-        font-family: 'Abel', sans-serif;
+        font-family: $font1;
         text-transform: uppercase;
         font-weight: bolder;
-        color: #40e0d0;
+        color: $color6;
         align-self: center;
         font-size: 1rem;
-        text-shadow: 0 0 1.1rem black;
+        text-shadow: 0 0 1.1rem $color10;
         background-color: #000000a8;
         padding: 0.1rem;
         width: 180%;
@@ -450,8 +476,8 @@ p::selection {
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 2rem;
         text-decoration: none;
-        background: rgb(13, 115, 115);
-        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        background: $gradient1A;
+        background: $gradient1B;
     }
 }
 
@@ -518,7 +544,7 @@ p::selection {
     background-position: bottom;
     background-size: cover;
     border-radius: 2rem;
-    border: 0.3rem solid #103532;
+    border: 0.3rem solid $color3;
     filter: sepia(100%);
     transition: all 0.7s;
     width: 80%;
@@ -546,31 +572,31 @@ p::selection {
 .subir {
     height: 3.1rem;
     width: 3.1rem;
-    background-color: black;
+    background-color: $color10;
     text-align: center;
     line-height: 2.5rem;
-    border: 0.3rem solid #40e0d0;
+    border: 0.3rem solid $color6;
     border-radius: 50%;
     position: fixed;
     bottom: 1.25rem;
     right: 1.25rem;
     font-size: 2rem;
-    color: #40e0d0;
-    transition: all 1s;
+    color: $color6;
+    transition: $transition2;
 }
 
 .subir:hover {
-    background-color: #40e0d0;
-    color: black;
-    border: 5px solid #216e67;
-    transition: all 1s;
+    background-color: $color6;
+    color: $color10;
+    border: 5px solid $color5;
+    transition: $transition2;
 }
 
 .subir:focus {
     background-color: rgb(3, 22, 41);
-    color: #f58b01;
-    border: 5px solid #f58b01;
-    transition: all 1s;
+    color: $color9;
+    border: 5px solid $color9;
+    transition: $transition2;
 }
 
 /* fin boton subir */
@@ -578,14 +604,14 @@ p::selection {
 footer {
     text-align: center;
     font-size: 1rem;
-    font-family: 'Abel', sans-serif;
+    font-family: $font1;
     font-weight: bold;
     text-transform: uppercase;
     background-image: url(./assets/img/back07.jpg);
     background-size: cover;
     background-position: bottom;
-    color: white;
-    text-shadow: 1px 1px 5px #40e0d0;
+    color: $color11;
+    text-shadow: $fontshadow3;
     padding: 0.5rem;
 
     p {
@@ -594,15 +620,15 @@ footer {
 
     .redes i {
         font-size: 1.2rem;
-        color: white;
+        color: $color11;
         letter-spacing: 0.6rem;
         margin-top: 0.5rem;
     }
 
     .redes i:hover {
-        color: #40e0d0;
+        color: $color6;
         transform: scale(1.5);
-        transition: all 0.5s;
+        transition: $transition1;
     }
 }
 
@@ -629,19 +655,19 @@ footer {
         li {
             width: 10px;
             height: 5px;
-            background-color: #40e0d0;
-            transition: all 0.3s;
+            background-color: $color6;
+            transition: $transition0;
         }
 
         li:hover {
-            background-color: #177269;
+            background-color: $color4;
             transform: scale(1.2);
-            transition: all 0.3s;
+            transition: $transition0;
         }
 
         li:active {
-            background-color: #e48406;
-            transition: all 0.3s;
+            background-color: $color8;
+            transition: $transition0;
         }
     }
     }
@@ -652,10 +678,10 @@ footer {
     .comics {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 12.5rem);
-        transition: all 1s;
+        transition: $transition2;
         
         a {
-            font-family: 'Abel', sans-serif;
+            font-family: $font1;
             font-size: 2rem;
             padding: 0.1rem;
         }
@@ -685,7 +711,7 @@ footer {
 
         a {
         font-size: 2rem;
-        transition: all 1s;
+        transition: $transition2;
     }
 }
 }
@@ -715,7 +741,7 @@ footer {
     .comics {
         a {
         font-size: 2rem;
-        transition: all 1s;
+        transition: $transition2;
     }
     }
 }
@@ -730,19 +756,19 @@ footer {
         li {
         width: 30px;
         height: 15px;
-        background-color: #40e0d0;
-        transition: all 0.3s;
+        background-color: $color6;
+        transition: $transition0;
     }
 
         li:hover {
-        background-color: #177269;
+        background-color: $color4;
         transform: scale(1.2);
-        transition: all 0.3s;
+        transition: $transition0;
     }
 
         li:active {
-        background-color: #e48406;
-        transition: all 0.3s;
+        background-color: $color8;
+        transition: $transition0;
     }
     }
 
@@ -750,11 +776,11 @@ footer {
     .comics {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 20rem);
-        transition: all 1s;
+        transition: $transition2;
 
         a {
             font-size: 3rem;
-            transition: all 1s;
+            transition: $transition2;
         }
     }
 }

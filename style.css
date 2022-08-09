@@ -581,7 +581,6 @@ footer .redes i:hover {
 }
 
 /* footer fin */
-/* vista mobile */
 @media only screen and (max-width: 403px) {
   .jumbotron {
     height: auto;

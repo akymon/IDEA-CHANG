@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap');
 
+// inicio de variables 
 $color1: #00151d;
 $color2: #00374d;
 $color3: #103532;
@@ -25,8 +26,9 @@ $fontshadow3: 1px 1px 5px #40e0d0;
 $transition0: all 0.3s;
 $transition1: all 0.5s;
 $transition2: all 1s;
+// fin de variables
 
-
+// inicio de selector universal
 * {
     padding: 0;
     margin: 0;
@@ -34,6 +36,7 @@ $transition2: all 1s;
     text-decoration: none;
     list-style: none;
 }
+// fin de selector universal
 
 .col-lg-12,
 .col-lg-6 {
@@ -299,7 +302,7 @@ p::selection {
     p {
         color: $color11;
         text-shadow: $fontshadow2;
-        text-align: center;
+        text-align: center;    
     }
 }
 
@@ -600,6 +603,7 @@ p::selection {
 }
 
 /* fin boton subir */
+
 /* footer inicia */
 footer {
     text-align: center;
@@ -634,7 +638,7 @@ footer {
 
 /* footer fin */
 
-/* vista mobile */
+// inicio media queries
 @media only screen and (max-width: 403px) {
 
     .jumbotron {
@@ -793,3 +797,5 @@ footer {
         height: 600px;
     }
 }
+
+// fin media queries

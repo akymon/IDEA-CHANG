@@ -612,13 +612,52 @@ p::selection {
     width: 100%;
     height: auto;
     margin-left: 0;
+    justify-content: center;
+    word-spacing: 3px;
+
+    .invalid-feedback {
+        color: red;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $font2;
+        text-shadow: $fontshadow1;
+
+    }
+
+    .formbtn {
+    background-color: $color2;
+    font-family: $font2;
+    border: 0.2rem solid $color1;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: $transition1;
+    }
+    .formbtn:hover {
+        background-color: $color8;
+        border: 0.2rem solid $color7;
+        color: $color11;
+        transition: $transition1;
+    }
+
     label {
         color: $color6;
         text-shadow: $fontshadow1;
         font-family: $font3;
         font-size: 1.2rem;
     }
+    .form-check {
+        margin-top: 1rem;
+    }
 }
+
+.commentbox {
+    label {
+        word-spacing: 5px;
+    }
+}
+
+
 
 // fin contacto
 
@@ -646,7 +685,7 @@ p::selection {
     transition: $transition2;
 }
 
-.subir:focus {
+.subir:active {
     background-color: rgb(3, 22, 41);
     color: $color9;
     border: 5px solid $color9;

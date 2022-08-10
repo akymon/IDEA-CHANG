@@ -567,12 +567,43 @@ p::selection {
   width: 100%;
   height: auto;
   margin-left: 0;
+  justify-content: center;
+  word-spacing: 3px;
+}
+.box01 .invalid-feedback {
+  color: red;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Rajdhani", sans-serif;
+  text-shadow: 1px 1px 5px black;
+}
+.box01 .formbtn {
+  background-color: #00374d;
+  font-family: "Rajdhani", sans-serif;
+  border: 0.2rem solid #00151d;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.box01 .formbtn:hover {
+  background-color: #e48406;
+  border: 0.2rem solid #794605;
+  color: white;
+  transition: all 0.5s;
 }
 .box01 label {
   color: #40e0d0;
   text-shadow: 1px 1px 5px black;
   font-family: "Reem Kufi", sans-serif;
   font-size: 1.2rem;
+}
+.box01 .form-check {
+  margin-top: 1rem;
+}
+
+.commentbox label {
+  word-spacing: 5px;
 }
 
 /* inicia boton subir */
@@ -599,7 +630,7 @@ p::selection {
   transition: all 1s;
 }
 
-.subir:focus {
+.subir:active {
   background-color: rgb(3, 22, 41);
   color: #f58b01;
   border: 5px solid #f58b01;

@@ -44,7 +44,7 @@
           <li class="nav-item">
           <a class="nav-header" href="../index.html"><i class="fa-solid fa-house"></i> Inicio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item1">
             <a class="nav-header" href="./campeones.html"><i class="fa-solid fa-road"></i> Campeones</a>
           </li>
           <li class="nav-item">
@@ -55,7 +55,7 @@
             <a class="nav-header" href="#"><i class="fa-solid fa-music"></i>
               Sounds</a>
           </li>
-          <li class="nav-item1">
+          <li class="nav-item">
             <a class="nav-header" href="#"><i class="fa-solid fa-file-signature"></i>
               Contacto</a>
           </li>
@@ -70,68 +70,34 @@
     </div>
     <!-- jumbotron fin -->  
     <!-- carriles inicia -->
-    <section class="campeones container-fluid">
-        <div class="row cardcampeones">
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesShyvanaSmall.png" class="card01 rounded" alt="retrato del campeon Shyvana de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title"><span>S</span>hyvana</h5>
-                  <p class="card-text">Se puede jugar en el carril <span class="cardenfasis">superior</span> o en <span class="cardenfasis">jungla</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/shyvana/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
+    <section class="formulario">
+        <div class="row box01">
+            <article class="col-sm-6 col-md-4 col-lg-4">
+              <div>
+                <form action="/action_page.php" class="contacto01 was-validated">
+                  <div class="form-group">
+                    <label for="uname">Username:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Ingresar Nombre" name="uname" required>
+                    <div class="valid-feedback">Completado</div>
+                    <div class="invalid-feedback">Por favor completar celda</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                    <div class="valid-feedback">Completado</div>
+                    <div class="invalid-feedback">Por favor completar celda</div>
+                  </div>
+                  <div class="form-group form-check">
+                    <label class="form-check-label">
+                      <input class="form-check-input" type="checkbox" name="remember" required> Soy mayor de edad. (18+)
+                      <div class="valid-feedback">Aceptado</div>
+                      <div class="invalid-feedback">Debes ser mayor de edad para continuar</div>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
               </div>
             </article>
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesWukongSmall.png" class="card01 rounded" alt="retrato del campeon Wukong de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title">wukong</h5>
-                  <p class="card-text">Se puede jugar en el carril <span class="cardenfasis">superior</span> o en <span class="cardenfasis">jungla</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/monkeyking/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
-              </div>
-            </article>
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesRenektonSmall.png" class="card01 rounded" alt="retrato del campeon Renekton de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title">renekton</h5>
-                  <p class="card-text">Se puede jugar en el carril <span class="cardenfasis">superior</span> o en <span class="cardenfasis">jungla</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/renekton/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
-              </div>
-            </article> 
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesKassadinSmall.png" class="card01 rounded" alt="retrato del campeon Kassadin de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title">Kassadin</h5>
-                  <p class="card-text">Se juega en el carril <span class="cardenfasis">central</span> o en <span class="cardenfasis">jungla</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/kassadin/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
-              </div>
-            </article> 
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesEzrealSmall.png" class="card01 rounded" alt="retrato del campeon Ezreal de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title">Ezreal</h5>
-                  <p class="card-text">Se juega en el carril <span class="cardenfasis">central</span> o de <span class="cardenfasis">tirador</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/ezreal/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
-              </div>
-            </article> 
-            <article class="col-sm-6 col-md-4 col-lg-4 feature feat 1">
-              <div class="card rounded" style="width: auto;" data-aos="zoom-in-up">
-                <img src="../assets/img/campeonesKarmaSmall.png" class="card01 rounded" alt="retrato del campeon Karma de league of legends">
-                <div class="card-body">
-                  <h5 class="card-title">Karma</h5>
-                  <p class="card-text">Se juega en el carril <span class="cardenfasis">central</span> o de <span class="cardenfasis">soporte</span>.</p>
-                  <a href="https://universe.leagueoflegends.com/es_ES/story/champion/karma/" class="btn btn-primary btncard" target="_blank">Biografia Oficial</a>
-                </div>
-              </div>
-            </article>          
         </div>
     </section>
     <!-- carriles fin -->

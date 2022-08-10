@@ -603,6 +603,25 @@ p::selection {
 }
 /* fin comic */
 
+// inicio contacto 
+.box01 {
+    background-image: url(./assets/img/formacionesfondo00.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    label {
+        color: $color6;
+        text-shadow: $fontshadow1;
+        font-family: $font3;
+        font-size: 1.2rem;
+    }
+}
+
+// fin contacto
+
 /* inicia boton subir */
 .subir {
     height: 3.1rem;

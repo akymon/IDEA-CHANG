@@ -559,6 +559,22 @@ p::selection {
 }
 
 /* fin comic */
+.box01 {
+  background-image: url(./assets/img/formacionesfondo00.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  margin-left: 0;
+}
+.box01 label {
+  color: #40e0d0;
+  text-shadow: 1px 1px 5px black;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.2rem;
+}
+
 /* inicia boton subir */
 .subir {
   height: 3.1rem;

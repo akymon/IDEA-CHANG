@@ -125,11 +125,10 @@ $transition2: all 1s;
 
 /* jumbotron inicio */
 .jumbotron {
-
     text-shadow: $fontshadow1;
     border-radius: 0;
     margin-bottom: 0;
-    font-family: $font2;
+    font-family: $font1;
     font-size: 1rem;
     border-bottom: 1rem solid $color10;
     padding: 1.5rem;
@@ -153,6 +152,7 @@ $transition2: all 1s;
     background-size: cover;
     background-position: center;
     text-align: center;
+    font-family: $font1;
     h1 {
         background: rgb(13, 115, 115);
         background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
@@ -172,6 +172,7 @@ $transition2: all 1s;
     background-image: url(./assets/img/iniciofondo02.jpg);
     background-size: cover;
     background-position: center;
+    font-family: $font1;
     h1 {
         background: rgb(13, 115, 115);
         background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
@@ -179,6 +180,12 @@ $transition2: all 1s;
         margin-right: 50px;
         text-align: center;
         border-radius: 2rem;
+        font-family: $font3;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding: 7px;
+        font-weight: bold;
         }
 }
 
@@ -218,12 +225,17 @@ $transition2: all 1s;
 
 h1::first-letter {
     color: $color6;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
 }
 
 h2::first-letter {
     color: $color6;
-    font-size: 3rem;
+    font-size: 2.5rem;
+}
+
+h5::first-letter {
+    color: $color6;
+    font-size: 2.5rem;
 }
 
 /* jumbotron fin */
@@ -301,10 +313,10 @@ p::selection {
     
     h5 {
         text-transform: capitalize;
-        color: $color6;
+        color: $color11;
         text-shadow: $fontshadow3;
         font-weight: bold;
-        font-size: 2.4rem;
+        font-size: 2rem;
         text-align: center;
     }
     p {
@@ -390,7 +402,7 @@ p::selection {
     background-image: url(./assets/img/back06.jpg);
     background-size: cover;
     background-position: center;
-    
+    font-family: $font1;
     h1 {
         background: $gradient1A;
         background: $gradient1B;
@@ -399,6 +411,12 @@ p::selection {
         margin-bottom: 1rem;
         text-align: center;
         border-radius: 2rem;
+        font-family: $font3;
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding: 7px;
+        font-weight: bold;
         }
 
     p {
@@ -447,7 +465,7 @@ p::selection {
     }
 
 .carousel-inner {
-    width: 50%;
+    width: 75%;
     margin: auto;
 }
 
@@ -458,6 +476,10 @@ p::selection {
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 2rem;
+    text-transform: uppercase;
+        span {
+            color: $color6;
+        }
 }
 
 .comics {
@@ -693,6 +715,11 @@ footer {
             background-color: $color8;
             transition: $transition0;
         }
+    }
+
+    .carousel-inner {
+        width: 95%;
+        // margin: auto;
     }
     }
 

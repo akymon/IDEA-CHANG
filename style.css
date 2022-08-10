@@ -97,7 +97,7 @@
   text-shadow: 1px 1px 5px black;
   border-radius: 0;
   margin-bottom: 0;
-  font-family: "Rajdhani", sans-serif;
+  font-family: "Abel", sans-serif;
   font-size: 1rem;
   border-bottom: 1rem solid black;
   padding: 1.5rem;
@@ -119,6 +119,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
+  font-family: "Abel", sans-serif;
 }
 .jumboinicio h1 {
   background: rgb(13, 115, 115);
@@ -138,6 +139,7 @@
   background-image: url(./assets/img/iniciofondo02.jpg);
   background-size: cover;
   background-position: center;
+  font-family: "Abel", sans-serif;
 }
 .jumbocarriles h1 {
   background: rgb(13, 115, 115);
@@ -146,6 +148,12 @@
   margin-right: 50px;
   text-align: center;
   border-radius: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 7px;
+  font-weight: bold;
 }
 
 .btn-info {
@@ -183,12 +191,17 @@
 
 h1::first-letter {
   color: #40e0d0;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
 }
 
 h2::first-letter {
   color: #40e0d0;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+h5::first-letter {
+  color: #40e0d0;
+  font-size: 2.5rem;
 }
 
 /* jumbotron fin */
@@ -266,10 +279,10 @@ p::selection {
 }
 .card-body h5 {
   text-transform: capitalize;
-  color: #40e0d0;
+  color: white;
   text-shadow: 1px 1px 5px #40e0d0;
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size: 2rem;
   text-align: center;
 }
 .card-body p {
@@ -351,6 +364,7 @@ p::selection {
   background-image: url(./assets/img/back06.jpg);
   background-size: cover;
   background-position: center;
+  font-family: "Abel", sans-serif;
 }
 .jumbocomics h1 {
   background: rgb(13, 115, 115);
@@ -360,6 +374,12 @@ p::selection {
   margin-bottom: 1rem;
   text-align: center;
   border-radius: 2rem;
+  font-family: "Reem Kufi", sans-serif;
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 7px;
+  font-weight: bold;
 }
 .jumbocomics p {
   margin: 0;
@@ -402,7 +422,7 @@ p::selection {
 }
 
 .carousel-inner {
-  width: 50%;
+  width: 75%;
   margin: auto;
 }
 
@@ -413,6 +433,10 @@ p::selection {
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 2rem;
+  text-transform: uppercase;
+}
+.subtitulocomic span {
+  color: #40e0d0;
 }
 
 .comics {
@@ -632,6 +656,9 @@ footer .foottexto {
   .carousel-indicators li:active {
     background-color: #e48406;
     transition: all 0.3s;
+  }
+  .carousel-inner {
+    width: 95%;
   }
 }
 @media only screen and (min-width: 360px) {

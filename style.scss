@@ -47,7 +47,6 @@ $transition2: all 1s;
 /* navbar inicio */
 .navbar {
     background-image: url(./assets/img/banner01B.jpg);
-    background-color: grey;
     background-size: cover;
     background-position: center;
     color: $color11;
@@ -96,7 +95,9 @@ $transition2: all 1s;
     color: $color6;
     margin-right: 15px;
     background-color: $color10;
-    padding: 7px;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 0.5rem;
 }
 
@@ -159,6 +160,11 @@ $transition2: all 1s;
         margin-right: 50px;
         text-align: center;
         border-radius: 2rem;
+        font-size: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding: 7px;
+        font-weight: bold;
         }
 }
 
@@ -225,7 +231,9 @@ h2::first-letter {
 /* section intro01 inicio */
 
 .intro01 {
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     
     h2 {
         margin-top: 0.5rem;
@@ -356,14 +364,16 @@ p::selection {
 
 .subtitulo01,
 .subtitulo02 {
-    font-size: 2.5rem;
     font-family: $font2;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
     background: $gradient1A;
     background: $gradient1B;
-    padding: 5px;
     border-radius: 2rem;
+    font-size: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding: 7px;
 }
 
 .introVideo01,
@@ -634,6 +644,16 @@ footer {
         transform: scale(1.5);
         transition: $transition1;
     }
+    .footw {
+        color: $color6;
+    }
+    .footsubtitulo {
+        font-size: 1rem;
+    }
+    .foottexto {
+        font-size: 1rem;
+        text-transform: none;
+    }
 }
 
 /* footer fin */
@@ -721,8 +741,8 @@ footer {
 }
 
 /* vista desktop */
-@media only screen and (min-width: 992px) {
-
+@media only screen and (min-width: 992px) {    
+    
     .jumbotron {
         text-align: center;
     }

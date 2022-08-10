@@ -615,6 +615,14 @@ p::selection {
     justify-content: center;
     word-spacing: 3px;
 
+    .valid-feedback {
+        color: greenyellow;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: $font2;
+        text-shadow: $fontshadow1;
+    }
+
     .invalid-feedback {
         color: red;
         font-size: 1rem;
@@ -653,6 +661,7 @@ p::selection {
 
 .commentbox {
     label {
+        margin-top: 10px;
         word-spacing: 5px;
     }
 }

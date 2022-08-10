@@ -570,6 +570,13 @@ p::selection {
   justify-content: center;
   word-spacing: 3px;
 }
+.box01 .valid-feedback {
+  color: greenyellow;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Rajdhani", sans-serif;
+  text-shadow: 1px 1px 5px black;
+}
 .box01 .invalid-feedback {
   color: red;
   font-size: 1rem;
@@ -603,6 +610,7 @@ p::selection {
 }
 
 .commentbox label {
+  margin-top: 10px;
   word-spacing: 5px;
 }
 

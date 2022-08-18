@@ -72,7 +72,6 @@ $transition2: all 1s;
         padding: 7px;
 }
 
-
 .backgradient {
     background: $gradient1A;
     background: $gradient1B;
@@ -81,6 +80,12 @@ $transition2: all 1s;
 .firstletter {
     color: $color6;
     font-size: 2.5rem;
+}
+
+@mixin config01 ($width, $height, $bcolor){
+    width: $width;
+    height: $height;
+    background-color: $bcolor;
 }
 
 .navbar {
@@ -509,15 +514,13 @@ falign: center,
     a {
         @extend .fbold;
         @extend .backgradient;
+        @include config01(180%, auto , #000000a8);
         font-family: $font1;
         color: $color6;
         align-self: center;
         font-size: 1rem;
         text-shadow: 0 0 1.1rem $color10;
-        background-color: #000000a8;
         padding: 0.1rem;
-        width: 180%;
-        height: auto;
         margin-bottom: 7rem;
         margin-left: 0.5rem;
         border-bottom-right-radius: 2rem;
@@ -681,9 +684,7 @@ falign: center,
 
 /* inicia boton subir */
 .subir {
-    height: 3.1rem;
-    width: 3.1rem;
-    background-color: $color10;
+    @include config01(3.1rem, 3.1rem , $color10);
     text-align: center;
     line-height: 2.5rem;
     border: 0.3rem solid $color6;
@@ -774,9 +775,7 @@ footer {
     .carousel-indicators {
 
         li {
-            width: 10px;
-            height: 5px;
-            background-color: $color6;
+            @include config01(10px, 5px, $color6);
             transition: $transition0;
         }
 
@@ -880,9 +879,7 @@ footer {
 
     .carousel-indicators {
         li {
-        width: 30px;
-        height: 15px;
-        background-color: $color6;
+        @include config01(30px, 15px, $color6);
         transition: $transition0;
     }
 

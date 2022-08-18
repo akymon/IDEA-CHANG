@@ -405,15 +405,15 @@ p::selection {
   justify-items: center;
 }
 .comics a {
+  width: 180%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6588235294);
   font-family: "Abel", sans-serif;
   color: #40e0d0;
   align-self: center;
   font-size: 1rem;
   text-shadow: 0 0 1.1rem black;
-  background-color: rgba(0, 0, 0, 0.6588235294);
   padding: 0.1rem;
-  width: 180%;
-  height: auto;
   margin-bottom: 7rem;
   margin-left: 0.5rem;
   border-bottom-right-radius: 2rem;
@@ -563,8 +563,8 @@ p::selection {
 
 /* inicia boton subir */
 .subir {
-  height: 3.1rem;
   width: 3.1rem;
+  height: 3.1rem;
   background-color: black;
   text-align: center;
   line-height: 2.5rem;

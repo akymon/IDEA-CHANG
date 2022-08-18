@@ -17,20 +17,55 @@
 }
 
 /* navbar inicio */
-.navbar {
-  background-image: url(./assets/img/banner01B.jpg);
+.fbold, footer, .box01 .formbtn, .comics a, .btn-info, .btncard, .extinicio, .jumbotron p, .jumbotron h1, .navbar {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.backsizeposition, .jumbocomics, .jumbocarriles, .jumboinicio, .navbar {
   background-size: cover;
   background-position: center;
+}
+
+.dispflexrow, .contenido01, .contenido02, .navbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.textalignbold, .jumbocomics h1, .subtitulo01,
+.subtitulo02, .jumbocarriles h1, .jumboinicio h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.marg01, .jumbocomics h1, .jumbocarriles h1, .jumboinicio h1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding: 7px;
+}
+
+.backgradient, .comics a, .subtitulocomic, .jumbocomics h1, .subtitulo01,
+.subtitulo02, .jumbocarriles h1, .jumboinicio h1 {
+  background: rgb(13, 115, 115);
+  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
+}
+
+.firstletter, h5::first-letter, h2::first-letter, h1::first-letter {
+  color: #40e0d0;
+  font-size: 2.5rem;
+}
+
+.navbar {
+  background-image: url(./assets/img/banner01B.jpg);
   color: white;
   text-shadow: 1px 1px 5px black;
   font-size: 1rem;
-  display: flex;
-  flex-direction: row;
   align-items: flex-end;
   padding: 0.5rem;
   font-family: "Reem Kufi", sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
   border-bottom: 1rem solid #00374d;
   position: -webkit-sticky;
   position: sticky;
@@ -93,6 +128,10 @@
 
 /* navbar fin */
 /* jumbotron inicio */
+.extinicio, .jumbotron p, .jumbotron h1 {
+  color: white;
+}
+
 .jumbotron {
   text-shadow: 1px 1px 5px black;
   border-radius: 0;
@@ -102,78 +141,37 @@
   border-bottom: 1rem solid black;
   padding: 1.5rem;
 }
-.jumbotron h1 {
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-}
 .jumbotron p {
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
   font-size: 1.1rem;
 }
 
 .jumboinicio {
-  background-image: url(./assets/img/jumbotron01.jpg);
-  background-size: cover;
-  background-position: center;
   text-align: center;
+  background-image: url(./assets/img/jumbotron01.jpg);
   font-family: "Abel", sans-serif;
 }
 .jumboinicio h1 {
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-  border-radius: 2rem;
   font-size: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding: 7px;
-  font-weight: bold;
 }
 
 .jumbocarriles {
   background-image: url(./assets/img/iniciofondo02.jpg);
-  background-size: cover;
-  background-position: center;
   font-family: "Abel", sans-serif;
 }
 .jumbocarriles h1 {
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
-  margin-left: 50px;
-  margin-right: 50px;
-  text-align: center;
-  border-radius: 2rem;
-  font-family: "Reem Kufi", sans-serif;
   font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding: 7px;
-  font-weight: bold;
+  font-family: "Reem Kufi", sans-serif;
 }
 
-.btn-info {
+.btn-info, .btncard {
   background-color: #00374d;
   font-family: "Rajdhani", sans-serif;
   border: 0.2rem solid #00151d;
-  text-transform: uppercase;
   border-radius: 1rem;
-  font-weight: bold;
   transition: all 0.5s;
 }
 
 .btncard {
-  background-color: #00374d;
-  font-family: "Rajdhani", sans-serif;
-  border: 0.2rem solid #00151d;
-  text-transform: uppercase;
-  border-radius: 1rem;
-  font-weight: bold;
-  transition: all 0.5s;
   width: 100%;
 }
 
@@ -187,21 +185,6 @@
 .btn a {
   color: white;
   text-decoration: none;
-}
-
-h1::first-letter {
-  color: #40e0d0;
-  font-size: 2.5rem;
-}
-
-h2::first-letter {
-  color: #40e0d0;
-  font-size: 2.5rem;
-}
-
-h5::first-letter {
-  color: #40e0d0;
-  font-size: 2.5rem;
 }
 
 /* jumbotron fin */
@@ -300,14 +283,12 @@ p::selection {
 
 /* cardcampeones fin */
 /* inicio inicio */
-.contenido01 {
-  display: flex;
-  flex-direction: row;
+.contenido01, .contenido02 {
+  text-align: center;
   justify-content: center;
   background-image: url(./assets/img/submenuintro02.jpg);
   color: white;
   text-shadow: 1px 1px 5px black;
-  text-align: center;
   font-size: 1rem;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -315,17 +296,7 @@ p::selection {
 }
 
 .contenido02 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background-image: url(./assets/img/submenuintro02.jpg);
-  color: white;
-  text-shadow: 1px 1px 5px black;
   text-align: right;
-  font-size: 1rem;
-  padding: 0.5rem;
-  text-transform: uppercase;
-  border-bottom: 1rem solid black;
 }
 .contenido02 p {
   margin: 1rem;
@@ -340,10 +311,6 @@ p::selection {
 .subtitulo01,
 .subtitulo02 {
   font-family: "Rajdhani", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
   border-radius: 2rem;
   font-size: 2rem;
   padding-top: 0.5rem;
@@ -362,24 +329,12 @@ p::selection {
 /* inicio comic */
 .jumbocomics {
   background-image: url(./assets/img/back06.jpg);
-  background-size: cover;
-  background-position: center;
   font-family: "Abel", sans-serif;
 }
 .jumbocomics h1 {
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
-  margin-left: 50px;
-  margin-right: 50px;
   margin-bottom: 1rem;
-  text-align: center;
-  border-radius: 2rem;
-  font-family: "Reem Kufi", sans-serif;
   font-size: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding: 7px;
-  font-weight: bold;
+  font-family: "Reem Kufi", sans-serif;
 }
 .jumbocomics p {
   margin: 0;
@@ -427,8 +382,6 @@ p::selection {
 }
 
 .subtitulocomic {
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
   padding: 5px;
   margin-left: 50px;
   margin-right: 50px;
@@ -453,8 +406,6 @@ p::selection {
 }
 .comics a {
   font-family: "Abel", sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
   color: #40e0d0;
   align-self: center;
   font-size: 1rem;
@@ -468,8 +419,6 @@ p::selection {
   border-bottom-right-radius: 2rem;
   border-top-right-radius: 2rem;
   text-decoration: none;
-  background: rgb(13, 115, 115);
-  background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
 }
 
 .tomo1 {
@@ -588,9 +537,7 @@ p::selection {
   background-color: #00374d;
   font-family: "Rajdhani", sans-serif;
   border: 0.2rem solid #00151d;
-  text-transform: uppercase;
   border-radius: 1rem;
-  font-weight: bold;
   transition: all 0.5s;
 }
 .box01 .formbtn:hover {
@@ -651,8 +598,6 @@ footer {
   text-align: center;
   font-size: 1rem;
   font-family: "Abel", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
   background-image: url(./assets/img/back07.jpg);
   background-size: cover;
   background-position: bottom;

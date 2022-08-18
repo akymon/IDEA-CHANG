@@ -45,20 +45,55 @@ $transition2: all 1s;
 }
 
 /* navbar inicio */
-.navbar {
-    background-image: url(./assets/img/banner01B.jpg);
+.fbold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.backsizeposition {
     background-size: cover;
     background-position: center;
+}
+.dispflexrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.textalignbold {
+    text-align: center;
+    font-weight: bold;
+}
+
+.marg01 {
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 2rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding: 7px;
+}
+
+
+.backgradient {
+    background: $gradient1A;
+    background: $gradient1B;
+}
+
+.firstletter {
+    color: $color6;
+    font-size: 2.5rem;
+}
+
+.navbar {
+    @extend .fbold;
+    @extend .backsizeposition;
+    @extend .dispflexrow;
+    background-image: url(./assets/img/banner01B.jpg);
     color: $color11;
     text-shadow: $fontshadow1;
     font-size: 1rem;
-    display: flex;
-    flex-direction: row;
     align-items: flex-end;
     padding: 0.5rem;
     font-family: $font3;
-    text-transform: uppercase;
-    font-weight: bolder;
     border-bottom: 1rem solid $color2;
     position: sticky;
     top: 0;
@@ -124,6 +159,12 @@ $transition2: all 1s;
 /* navbar fin */
 
 /* jumbotron inicio */
+.extinicio {
+    @extend .fbold;    
+    color: $color11;
+    
+}
+
 .jumbotron {
     text-shadow: $fontshadow1;
     border-radius: 0;
@@ -134,78 +175,51 @@ $transition2: all 1s;
     padding: 1.5rem;
 
     h1 {
-        font-weight: bold;
-        color: $color11;
-        text-transform: uppercase;
+        @extend .extinicio;
         }
     
     p {
-        font-weight: bold;
-        color: $color11;
-        text-transform: uppercase;
+        @extend .extinicio;
         font-size: 1.1rem;
         }
 }
 
 .jumboinicio {
-    background-image: url(./assets/img/jumbotron01.jpg);
-    background-size: cover;
-    background-position: center;
+    @extend .backsizeposition;
     text-align: center;
+    background-image: url(./assets/img/jumbotron01.jpg);
     font-family: $font1;
     h1 {
-        background: rgb(13, 115, 115);
-        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-        border-radius: 2rem;
+        @extend .textalignbold;
+        @extend .marg01;
+        @extend .backgradient;
         font-size: 2rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding: 7px;
-        font-weight: bold;
         }
 }
 
 .jumbocarriles {
+    @extend .backsizeposition;
     background-image: url(./assets/img/iniciofondo02.jpg);
-    background-size: cover;
-    background-position: center;
     font-family: $font1;
     h1 {
-        background: rgb(13, 115, 115);
-        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
-        margin-left: 50px;
-        margin-right: 50px;
-        text-align: center;
-        border-radius: 2rem;
-        font-family: $font3;
+        @extend .textalignbold;
+        @extend .backgradient;
+        @extend .marg01;
         font-size: 1.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding: 7px;
-        font-weight: bold;
+        font-family: $font3;
         }
 }
 
 .btn-info {
+    @extend .fbold;
     background-color: $color2;
     font-family: $font2;
     border: 0.2rem solid $color1;
-    text-transform: uppercase;
     border-radius: 1rem;
-    font-weight: bold;
     transition: $transition1;
 }
 .btncard {
-    background-color: $color2;
-    font-family: $font2;
-    border: 0.2rem solid $color1;
-    text-transform: uppercase;
-    border-radius: 1rem;
-    font-weight: bold;
-    transition: $transition1;
+    @extend .btn-info;
     width: 100%;
 }
 
@@ -224,18 +238,15 @@ $transition2: all 1s;
 
 
 h1::first-letter {
-    color: $color6;
-    font-size: 2.5rem;
+    @extend .firstletter;
 }
 
 h2::first-letter {
-    color: $color6;
-    font-size: 2.5rem;
+    @extend .firstletter;
 }
 
 h5::first-letter {
-    color: $color6;
-    font-size: 2.5rem;
+    @extend .firstletter;
 }
 
 /* jumbotron fin */
@@ -358,13 +369,12 @@ falign: center,
 
 /* inicio inicio */
 .contenido01 {
-    display: flex;
-    flex-direction: row;
+    @extend .dispflexrow;
+    text-align: center;
     justify-content: center;
     background-image: url(./assets/img/submenuintro02.jpg);
     color: $color11;
     text-shadow: $fontshadow1;
-    text-align: center;
     font-size: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
@@ -372,17 +382,8 @@ falign: center,
 }
 
 .contenido02 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: url(./assets/img/submenuintro02.jpg);
-    color: $color11;
-    text-shadow: $fontshadow1;
+    @extend .contenido01;
     text-align: right;
-    font-size: 1rem;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    border-bottom: 1rem solid $color10;
 
     p {
         margin: 1rem;
@@ -397,11 +398,9 @@ falign: center,
 
 .subtitulo01,
 .subtitulo02 {
+    @extend .textalignbold;
+    @extend .backgradient;
     font-family: $font2;
-    text-align: center;
-    font-weight: bold;
-    background: $gradient1A;
-    background: $gradient1B;
     border-radius: 2rem;
     font-size: 2rem;
     padding-top: 0.5rem;
@@ -420,24 +419,16 @@ falign: center,
 
 /* inicio comic */
 .jumbocomics {
+    @extend .backsizeposition;
     background-image: url(./assets/img/back06.jpg);
-    background-size: cover;
-    background-position: center;
     font-family: $font1;
     h1 {
-        background: $gradient1A;
-        background: $gradient1B;
-        margin-left: 50px;
-        margin-right: 50px;
+        @extend .backgradient;
+        @extend .textalignbold;
+        @extend .marg01;
         margin-bottom: 1rem;
-        text-align: center;
-        border-radius: 2rem;
-        font-family: $font3;
         font-size: 1.5rem;
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
-        padding: 7px;
-        font-weight: bold;
+        font-family: $font3;
         }
 
     p {
@@ -491,8 +482,7 @@ falign: center,
 }
 
 .subtitulocomic {
-    background: $gradient1A;
-    background: $gradient1B;
+    @extend .backgradient;
     padding: 5px;
     margin-left: 50px;
     margin-right: 50px;
@@ -516,9 +506,9 @@ falign: center,
     justify-items: center;
 
     a {
+        @extend .fbold;
+        @extend .backgradient;
         font-family: $font1;
-        text-transform: uppercase;
-        font-weight: bolder;
         color: $color6;
         align-self: center;
         font-size: 1rem;
@@ -532,8 +522,6 @@ falign: center,
         border-bottom-right-radius: 2rem;
         border-top-right-radius: 2rem;
         text-decoration: none;
-        background: $gradient1A;
-        background: $gradient1B;
     }
 }
 
@@ -654,13 +642,12 @@ falign: center,
     }
 
     .formbtn {
-    background-color: $color2;
-    font-family: $font2;
-    border: 0.2rem solid $color1;
-    text-transform: uppercase;
-    border-radius: 1rem;
-    font-weight: bold;
-    transition: $transition1;
+        @extend .fbold;
+        background-color: $color2;
+        font-family: $font2;
+        border: 0.2rem solid $color1;
+        border-radius: 1rem;
+        transition: $transition1;
     }
     .formbtn:hover {
         background-color: $color8;
@@ -726,11 +713,10 @@ falign: center,
 
 /* footer inicia */
 footer {
+    @extend .fbold;
     text-align: center;
     font-size: 1rem;
     font-family: $font1;
-    font-weight: bold;
-    text-transform: uppercase;
     background-image: url(./assets/img/back07.jpg);
     background-size: cover;
     background-position: bottom;

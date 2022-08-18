@@ -370,6 +370,7 @@ falign: center,
 /* inicio inicio */
 .contenido01 {
     @extend .dispflexrow;
+    @extend .backsizeposition;
     text-align: center;
     justify-content: center;
     background-image: url(./assets/img/submenuintro02.jpg);
@@ -438,7 +439,7 @@ falign: center,
 }
 
 .carousel {
-    background-image: url(./assets/img/back01.png);
+    background-image: url(./assets/img/back01.jpg);
     background-size: cover;
     border-bottom: 1rem solid $color10;
     padding: 1rem;

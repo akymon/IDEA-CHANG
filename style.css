@@ -22,7 +22,7 @@
   font-weight: bold;
 }
 
-.backsizeposition, .jumbocomics, .jumbocarriles, .jumboinicio, .navbar {
+.backsizeposition, .jumbocomics, .contenido01, .contenido02, .jumbocarriles, .jumboinicio, .navbar {
   background-size: cover;
   background-position: center;
 }
@@ -342,7 +342,7 @@ p::selection {
 }
 
 .carousel {
-  background-image: url(./assets/img/back01.png);
+  background-image: url(./assets/img/back01.jpg);
   background-size: cover;
   border-bottom: 1rem solid black;
   padding: 1rem;

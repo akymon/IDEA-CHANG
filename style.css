@@ -253,7 +253,7 @@ p::selection {
   background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
   margin: 1rem;
   font-family: "Rajdhani", sans-serif;
-  border: 3px solid #00151d;
+  border: 5px outset #158b94;
 }
 
 .cardcampeones {
@@ -264,7 +264,7 @@ p::selection {
 
 .card01 {
   margin: 10px;
-  border: 5px solid #00151d;
+  border: inset #0b4549;
 }
 
 .card-body {
@@ -278,7 +278,7 @@ p::selection {
   border-top-right-radius: 3rem;
 }
 .card-body h5 {
-  text-transform: capitalize;
+  text-transform: uppercase;
   color: white;
   text-shadow: 1px 1px 5px #40e0d0;
   font-weight: bold;

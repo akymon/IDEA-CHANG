@@ -196,8 +196,8 @@ $transition2: all 1s;
     font-family: $font1;
     h1 {
         @extend .textalignbold;
-        @extend .marg01;
         @extend .backgradient;
+        @extend .marg01;
         font-size: 2rem;
         }
 }
@@ -449,7 +449,7 @@ falign: center,
     border-bottom: 1rem solid $color10;
     padding: 1rem;
 
-    h3 {
+    h2 {
         padding-top: 10px;
         font-size: 1.5rem;
         font-family: $font3;

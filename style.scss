@@ -214,6 +214,9 @@ $transition2: all 1s;
         font-family: $font3;
         }
 }
+.jumbomusica {
+    @extend .jumbocarriles;
+}
 
 .btn-info {
     @extend .fbold;
@@ -319,56 +322,72 @@ falign: center,
 );
 // fin map get
 
-.card {
-    background: rgb(13, 115, 115);
-    background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
-    margin: map-get($cardsetting, padsize2);
-    font-family: $font2;
-    border: map-get($cardsetting, pxsize1) map-get($cardsetting, style1) map-get($cardsetting, color1);
-}
+
 
 .cardcampeones {
     background-image: url(./assets/img/formacionesfondo00.jpg);
     background-size: cover;
     padding: map-get($cardsetting, pxsize3);
-}
 
-.card01 {
-    margin: map-get($cardsetting, pxsize2);
-    border: map-get($cardsetting, size1) map-get($cardsetting, style2) map-get($cardsetting, color2);
-}
+    .campeones {
+        background: rgb(13, 115, 115);
+        background: linear-gradient(180deg, rgba(13, 115, 115, 1) 0%, rgba(9, 77, 77, 0.24681591386554624) 25%, rgba(0, 0, 0, 1) 100%);
+        margin: map-get($cardsetting, padsize2);
+        font-family: $font2;
+        border: map-get($cardsetting, pxsize1) map-get($cardsetting, style1) map-get($cardsetting, color1);
 
-.card-body {
-    padding-top: map-get($cardsetting, padsize1);
-    padding-left: map-get($cardsetting, padsize2);
-    padding-right: map-get($cardsetting, padsize2);
-    padding-bottom: map-get($cardsetting, padsize1);
-    background: $gradient1A;
-    background: $gradient1B;
-    border-top-left-radius: map-get($cardsetting, padsize4);
-    border-top-right-radius: map-get($cardsetting, padsize4);
+        .card01 {
+            margin: map-get($cardsetting, pxsize2);
+            border: map-get($cardsetting, size1) map-get($cardsetting, style2) map-get($cardsetting, color2);
+        }
+        .card-body {
+            padding-top: map-get($cardsetting, padsize1);
+            padding-left: map-get($cardsetting, padsize2);
+            padding-right: map-get($cardsetting, padsize2);
+            padding-bottom: map-get($cardsetting, padsize1);
+            background: $gradient1A;
+            background: $gradient1B;
+            border-top-left-radius: map-get($cardsetting, padsize4);
+            border-top-right-radius: map-get($cardsetting, padsize4);
+            
+            h5 {
+                text-transform: map-get($cardsetting, ftransform);
+                color: $color11;
+                text-shadow: $fontshadow3;
+                font-weight: map-get($cardsetting, fweight);
+                font-size: map-get($cardsetting, padsize3);
+                text-align: map-get($cardsetting, falign);
+            }
+            p {
+                color: $color11;
+                text-shadow: $fontshadow2;
+                text-align: map-get($cardsetting, falign);    
+            }
+            .cardenfasis {
+                text-transform: map-get($cardsetting, ftransform);
+                font-weight: map-get($cardsetting, fweight);
+                color: $color8;
+                text-shadow: map-get($cardsetting, pxsize0) map-get($cardsetting, pxsize0) map-get($cardsetting, pxsize1) $color8;
+            }
+        }   
+    }
     
-    h5 {
-        text-transform: map-get($cardsetting, ftransform);
-        color: $color11;
-        text-shadow: $fontshadow3;
-        font-weight: map-get($cardsetting, fweight);
-        font-size: map-get($cardsetting, padsize3);
-        text-align: map-get($cardsetting, falign);
-    }
-    p {
-        color: $color11;
-        text-shadow: $fontshadow2;
-        text-align: map-get($cardsetting, falign);    
+
+}
+
+.musicaspotify {
+    @extend .cardcampeones;
+    
+    .spotify {
+        @extend .campeones;
     }
 }
 
-.cardenfasis {
-    text-transform: map-get($cardsetting, ftransform);
-    font-weight: map-get($cardsetting, fweight);
-    color: $color8;
-    text-shadow: map-get($cardsetting, pxsize0) map-get($cardsetting, pxsize0) map-get($cardsetting, pxsize1) $color8;
-}
+
+
+
+
+
 
 /* cardcampeones fin */
 

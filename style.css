@@ -22,7 +22,7 @@
   font-weight: bold;
 }
 
-.backsizeposition, .jumbocomics, .contenido01, .contenido02, .jumbocarriles, .jumboinicio, .navbar {
+.backsizeposition, .jumbocomics, .contenido01, .contenido02, .jumbocarriles, .jumbomusica, .jumboinicio, .navbar {
   background-size: cover;
   background-position: center;
 }
@@ -33,12 +33,12 @@
 }
 
 .textalignbold, .jumbocomics h1, .subtitulo01,
-.subtitulo02, .jumbocarriles h1, .jumboinicio h1 {
+.subtitulo02, .jumbocarriles h1, .jumbomusica h1, .jumboinicio h1 {
   text-align: center;
   font-weight: bold;
 }
 
-.marg01, .jumbocomics h1, .jumbocarriles h1, .jumboinicio h1 {
+.marg01, .jumbocomics h1, .jumbocarriles h1, .jumbomusica h1, .jumboinicio h1 {
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 2rem;
@@ -48,7 +48,7 @@
 }
 
 .backgradient, .comics a, .subtitulocomic, .jumbocomics h1, .subtitulo01,
-.subtitulo02, .jumbocarriles h1, .jumboinicio h1 {
+.subtitulo02, .jumbocarriles h1, .jumbomusica h1, .jumboinicio h1 {
   background: rgb(13, 115, 115);
   background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
 }
@@ -154,11 +154,11 @@
   font-size: 2rem;
 }
 
-.jumbocarriles {
+.jumbocarriles, .jumbomusica {
   background-image: url(./assets/img/iniciofondo02.jpg);
   font-family: "Abel", sans-serif;
 }
-.jumbocarriles h1 {
+.jumbocarriles h1, .jumbomusica h1 {
   font-size: 1.5rem;
   font-family: "Reem Kufi", sans-serif;
 }
@@ -231,26 +231,23 @@ p::selection {
 
 /* section intro01 fin */
 /* cardcampeones inicio */
-.card {
+.cardcampeones, .musicaspotify {
+  background-image: url(./assets/img/formacionesfondo00.jpg);
+  background-size: cover;
+  padding: 20px;
+}
+.cardcampeones .campeones, .musicaspotify .campeones, .musicaspotify .spotify {
   background: rgb(13, 115, 115);
   background: linear-gradient(180deg, rgb(13, 115, 115) 0%, rgba(9, 77, 77, 0.2468159139) 25%, rgb(0, 0, 0) 100%);
   margin: 1rem;
   font-family: "Rajdhani", sans-serif;
   border: 5px outset #158b94;
 }
-
-.cardcampeones {
-  background-image: url(./assets/img/formacionesfondo00.jpg);
-  background-size: cover;
-  padding: 20px;
-}
-
-.card01 {
+.cardcampeones .campeones .card01, .musicaspotify .campeones .card01, .musicaspotify .spotify .card01 {
   margin: 10px;
   border: inset #0b4549;
 }
-
-.card-body {
+.cardcampeones .campeones .card-body, .musicaspotify .campeones .card-body, .musicaspotify .spotify .card-body {
   padding-top: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -260,7 +257,7 @@ p::selection {
   border-top-left-radius: 3rem;
   border-top-right-radius: 3rem;
 }
-.card-body h5 {
+.cardcampeones .campeones .card-body h5, .musicaspotify .campeones .card-body h5, .musicaspotify .spotify .card-body h5 {
   text-transform: uppercase;
   color: white;
   text-shadow: 1px 1px 5px #40e0d0;
@@ -268,13 +265,12 @@ p::selection {
   font-size: 2rem;
   text-align: center;
 }
-.card-body p {
+.cardcampeones .campeones .card-body p, .musicaspotify .campeones .card-body p, .musicaspotify .spotify .card-body p {
   color: white;
   text-shadow: 1px 1px 5px white;
   text-align: center;
 }
-
-.cardenfasis {
+.cardcampeones .campeones .card-body .cardenfasis, .musicaspotify .campeones .card-body .cardenfasis, .musicaspotify .spotify .card-body .cardenfasis {
   text-transform: uppercase;
   font-weight: bold;
   color: #e48406;
